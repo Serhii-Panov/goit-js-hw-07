@@ -12,10 +12,66 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#categories {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+.item {
+  padding: 16px;
+  background-color: #f6f6fe;
+  width: 392px;
+  border-radius: 8px;
+}
+.item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+.item ul li:last-child {
+  margin-bottom: 0px;
 }
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+  max-width: calc(360px * 3 + 24px * 2);
+  margin: 100px auto;
+}
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+}
+#name-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }

@@ -26,5 +26,5 @@ const images = [
 ];
 const gallery = document.querySelector(".gallery");
 images.forEach(element => {
-  gallery.insertAdjacentHTML("afterbegin", `<li><img src="${element.url}" alt="${element.alt}" width="360px" height="300px"</li>`);
+  gallery.insertAdjacentHTML("beforeend", `<li><img class="img-new" src="${element.url}" alt="${element.alt}" width="360px" height="300px"</li>`);
 });
