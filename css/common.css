@@ -61,7 +61,10 @@ ul {
   max-width: calc(360px * 3 + 24px * 2);
   margin: 100px auto;
 }
-#name-input {
+#name-input,
+.login-form input {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -74,4 +77,43 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login-form button,
+.change-color {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  width: 169px;
+  height: 80px;
+  margin: auto;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
 }
